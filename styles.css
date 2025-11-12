@@ -19,6 +19,7 @@ header {
   margin: 2rem auto;
   max-width: 1200px;
 }
+
 .navigation ul {
   display: flex;
   list-style-type: none;
@@ -45,6 +46,7 @@ hr {
   margin: 5rem auto;
   max-width: 1200px;
 }
+
 .arrow {
   position: absolute;
   transform: translateX(-5.5rem) translateY(1.5rem);
@@ -65,11 +67,13 @@ hr {
   font-size: 4rem;
   color: #00adb5;
 }
+
 .heroBtns {
   display: flex;
   gap: 1rem;
   margin-top: 1.5rem;
 }
+
 .hireMe {
   background-color: #00adb5;
   color: #eeeeee;
@@ -78,6 +82,7 @@ hr {
   padding: 0.5rem 1.5rem;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
+
 .cv {
   background-color: rgba(57, 62, 70, 0.75);
   color: #eeeeee;
@@ -99,22 +104,27 @@ hr {
   max-width: 1200px;
   gap: 10rem;
 }
+
 .textContainer {
   display: flex;
   flex-direction: column;
 }
+
 .textTitle {
   display: flex;
   align-items: center;
   gap: 5px;
   font-size: 2rem;
 }
+
 .aboutName {
   color: #eeeeee;
 }
+
 .aboutTitle {
   color: #00adb5;
 }
+
 .aboutMeParagraf {
   text-align: justify;
   color: rgba(238, 238, 238, 0.75);
@@ -125,6 +135,7 @@ hr {
   padding: 10rem 10rem;
   margin: 5rem 0rem;
 }
+
 .worksContainer {
   display: flex;
   flex-direction: column;
@@ -141,24 +152,28 @@ hr {
   gap: 5px;
   font-size: 2rem;
 }
+
 .works ul {
   display: flex;
   list-style-type: none;
   align-items: center;
   justify-content: space-between;
 }
+
 .works li {
   border-radius: 16px;
   background-color: rgba(57, 62, 70, 0.5);
   backdrop-filter: blur(4px);
   padding: 1rem 4rem;
 }
+
 .works li img {
   width: 200px;
   height: 200px;
   object-fit: contain;
   transition: transform 0.2s;
 }
+
 .works li :hover {
   transform: scale(1.5);
 }
@@ -172,6 +187,7 @@ hr {
   margin: 2rem auto;
   max-width: 1200px;
 }
+
 .contactTitle {
   display: flex;
   align-items: center;
@@ -180,6 +196,7 @@ hr {
   margin-bottom: 10px;
   font-size: 2rem;
 }
+
 .contact {
   display: flex;
   align-items: center;
@@ -187,11 +204,13 @@ hr {
   margin-right: 5rem;
   gap: 20rem;
 }
+
 .contact h3,
 .contact a {
   color: #eeeeee;
   text-decoration: none;
 }
+
 .emailAndPhone {
   display: flex;
   align-items: center;
@@ -205,6 +224,7 @@ hr {
   justify-content: center;
   gap: 3rem;
 }
+
 .socialMedia a {
   display: flex;
   align-items: center;
@@ -214,6 +234,7 @@ hr {
   backdrop-filter: blur(4px);
   padding: 1rem;
 }
+
 .socialMedia img {
   width: 24px;
   height: 24px;
@@ -225,67 +246,118 @@ footer {
   text-align: center;
 }
 
+
 @media (max-width: 1023px) {
   header {
     margin-left: 1rem;
     margin-right: 1rem;
   }
+
   .hero {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
   }
+
   .heroImg {
     width: 400px;
   }
+
   .name,
   .title {
     font-size: 2rem;
   }
+
   .arrow {
     display: none;
   }
+
   .aboutMe {
     flex-direction: column-reverse;
     align-items: center;
     gap: 2rem;
   }
+
   .textContainer {
     align-items: center;
     margin: 0rem 5rem;
     gap: 1rem;
   }
+
   .aboutName,
   .aboutTitle {
     font-size: 2rem;
   }
+
   .light {
     width: 60px;
   }
+
   .aboutMeImg {
     width: 400px;
   }
+
   .works {
     padding: 0;
   }
+
   .worksContainer {
     padding: 5rem 0rem;
     gap: 3rem;
   }
+
   .projectTitle {
     margin-left: 1rem;
   }
+
   .works ul {
     flex-direction: column;
     gap: 1rem;
   }
+
   .contactContainer {
     margin: 10rem 5rem;
     gap: 2rem;
   }
+
   .contact {
     flex-direction: column;
     gap: 1rem;
     margin-right: 0;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .works {
+    padding: 2rem;
+  }
+
+  .worksContainer {
+    padding: 2rem 0;
+    gap: 2rem;
+  }
+
+  .works li img {
+    width: 100%;
+    height: auto;
+  }
+
+  .aboutMeImg,
+  .heroImg {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .textContainer {
+    margin: 0 1rem;
+  }
+
+  .contactContainer {
+    margin: 2rem 1rem;
+  }
+
+  .contact {
+    gap: 1rem;
   }
 }
